@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Object Tracking</title>
+</head>
+<body>
+    <h1>Object Tracking</h1>
+    <form method="post">
+        <input type="submit" name="start" value="Start Tracking">
+        <input type="submit" name="stop" value="Stop Tracking">
+    </form>
+    <pre id="output"></pre>
+    <script>
+        function updateOutput() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', '/', true);
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    document.getElementById('output').innerText = xhr.responseText;
+                }
+            };
+            xhr.send();
+        }
+        setInterval(updateOutput, 1000);
+    </script>
+<<<<<<< HEAD
+</body>
+>>>>>>> 80413c4f (repush)
+</html>
+=======
+</body>
+>>>>>>> main

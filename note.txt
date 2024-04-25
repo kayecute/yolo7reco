@@ -1,0 +1,30 @@
+# for detection only
+python detect.py --weights yolov7.pt --source "your video.mp4"
+
+#if you want to change source file
+python detect_and_track.py --weights yolov7.pt --source "your video.mp4"
+
+#for WebCam
+python detect_and_track.py --weights yolov7.pt --source 0
+
+#for External Camera
+python detect_and_track.py --weights yolov7.pt --source 1
+
+#For LiveStream (Ip Stream URL Format i.e "rtsp://username:pass@ipaddress:portno/video/video.amp")
+python detect_and_track.py --source "your IP Camera Stream URL" --device 0
+
+#for specific class (person)
+python detect_and_track.py --weights yolov7.pt --source "your video.mp4" --classes 0
+
+#for colored tracks 
+python detect_and_track.py --weights yolov7.pt --source "your video.mp4" --colored-trk
+
+#for saving tracks centroid, track id and bbox coordinates
+python detect_and_track.py --weights yolov7.pt --source "your video.mp4" --save-txt --save-bbox-dim
+
+# to run with GPU (if you have gpu) please use this command
+# pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+# this one is for cuda 12.1, if you have different cuda version please change it accordingly
+# after run please run test.py to check if it is running on gpu
+
+python detect_and_track.py --weights yolov7.pt --source 1 --classes 0
