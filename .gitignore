@@ -4,5 +4,6 @@ runs/
 __pycache__
 weights/
 traced_model.pt
-
+venv/
+yolo7.pt
 README.md
