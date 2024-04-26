@@ -24,6 +24,7 @@ python detect_and_track.py --weights yolov7.pt --source "your video.mp4" --save-
 
 # to run with GPU (if you have gpu) please use this command
 # pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+# i use python 3.8.10 so use this line: pip install torch==2.2.2 torchvision==0.17.2 torchaudio==2.2.2 --index-url https://download.pytorch.org/whl/cu121
 # this one is for cuda 12.1, if you have different cuda version please change it accordingly
 # after run please run test.py to check if it is running on gpu
 

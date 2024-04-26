@@ -1,9 +1,9 @@
-<<<<<<< HEAD
 runs/
 */__pycache__/
 __pycache__
 weights/
 traced_model.pt
-venv/
-yolo7.pt
+yolov7.pt
 README.md
+venv/
+*/venv/
